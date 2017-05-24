@@ -1,0 +1,36 @@
+
+<div id='workshops' class="content-section-b">
+
+  <div class="container">
+
+    <div class="row">
+      <div class="col-lg-5 col-lg-offset-1 col-sm-push-6  col-sm-6">
+        <hr class="section-heading-spacer">
+        <div class="clearfix"></div>
+        <h2 class="section-heading">Coding Workshop</h2>
+        <h3>Sunday, June 11th<br/>09h00 - 13h00</h3>
+        <p class="lead">Turn your 2D designs into high quality, 3D product shots in seconds using free Photoshop actions by
+          <a target="_blank" href="http://www.psdcovers.com/">PSDCovers</a>! Visit their website to download some of their awesome, free photoshop actions!</p>
+      </div>
+      <div class="col-lg-5 col-sm-pull-6  col-sm-6">
+        <div class='panel panel-default'>
+          <div class='panel-body'>
+            <%= simple_form_for @registration, remote: true do |f| %>
+              <%= f.input :name, label: "Child's name" %>
+              <%= f.input :age, label: "Child's age" %>
+              <%= f.input :parent_name, label: "Parent's name" %>
+              <%= f.input :parent_phone, label: "Parent's phone" %>
+              <%= f.input :parent_email, label: "Parent's email" %>
+              <%= f.input :comments, as: :text %>
+              <%= f.submit 'Register', class: 'btn btn-primary btn-block' %>
+            <% end %>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+  <!-- /.container -->
+
+</div>
+<!-- /.content-section-b -->
