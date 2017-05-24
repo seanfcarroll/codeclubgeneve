@@ -8,9 +8,9 @@ gem 'puma', '~> 3.7'
 # admin / security
 gem 'devise'
 gem 'activeadmin', github: 'activeadmin'
-gem 'inherited_resources', github: 'activeadmin/inherited_resources'
-gem 'active_admin_datetimepicker'
-gem 'activeadmin-xls', github: 'thambley/activeadmin-xls'
+#gem 'inherited_resources', github: 'activeadmin/inherited_resources'
+#gem 'active_admin_datetimepicker'
+#gem 'activeadmin-xls', github: 'thambley/activeadmin-xls'
 
 # services
 gem 'carrierwave'
