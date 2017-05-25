@@ -23,10 +23,8 @@ gem "simple_form"
 gem 'jquery-rails'
 gem 'sass-rails', '~> 5.0'
 gem 'uglifier', '>= 1.3.0'
-
-# pdf export
-gem 'prawn'
-gem 'prawn-table'
+gem 'client_side_validations'
+gem 'client_side_validations-simple_form'
 
 # email
 gem 'actionview-encoded_mail_to'
