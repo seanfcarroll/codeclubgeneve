@@ -1,3 +1,9 @@
+$orange: #df815a;
+$blue: #639bb4;
+$green: #7dbf94;
+$light-grey: #f8f8f8;
+$dark-grey: #333333;
+
 body,
 html {
     width: 100%;
@@ -16,7 +22,9 @@ h6 {
 }
 
 .topnav {
-    font-size: 14px;
+    font-size: 18px;
+    color: $dark-grey;
+    background-color: $light-grey;
 }
 
 .lead {
@@ -28,8 +36,8 @@ h6 {
     padding-top: 50px; /* If you're making other pages, make sure there is 50px of padding to make sure the navbar doesn't overlap content! */
     padding-bottom: 50px;
     text-align: center;
-    color: #f8f8f8;
-    background: url('jet.jpg') no-repeat center center;
+    color: white;
+    background: url('jet.jpg') no-repeat center center fixed;
     background-size: cover;
 }
 
@@ -55,11 +63,25 @@ h6 {
     text-shadow: 2px 2px 3px rgba(0,0,0,0.6);
 }
 
+.panel {
+  border-radius: 0;
+  padding: 30px;
+}
+
+.form-control {
+  border-radius: 0;
+  background-color: $light-grey;
+}
+
 .panel-body {
   padding-top: 30px;
   padding-bottom: 30px;
   text-align: left;
+}
 
+a.contact {
+  font-size: 200%;
+  color: $orange;
 }
 
 @media(max-width:767px) {
@@ -92,6 +114,39 @@ h6 {
     font-weight: 400;
     letter-spacing: 2px;
 }
+
+
+section#coding {
+  padding: 50px 0;
+  background-color: #f8f8f8;
+  color: $dark-grey;
+}
+
+section#workshops {
+  padding: 50px 0;
+  border-top: 1px solid #e7e7e7;
+  border-bottom: 1px solid #e7e7e7;
+  background-color: $orange;
+  color: $dark-grey;
+
+}
+
+.hr-grey {
+  height: 2px;
+  color: $dark-grey;
+  background: $dark-grey;
+  font-size: 0;
+  border: 0;
+}
+
+
+section#getinvolved {
+  padding: 50px 0;
+  background-color: $light-grey;
+  color: $dark-grey;
+  padding-bottom: 40px;
+}
+
 
 .content-section-a {
     padding: 50px 0;
@@ -165,9 +220,17 @@ h6 {
 
 footer {
     padding: 50px 0;
-    background-color: #f8f8f8;
+    background-color: $green;
+    a {
+      color: $dark-grey;
+      font-size: 200%;
+    }
 }
 
 p.copyright {
     margin: 15px 0 0;
+    a {
+      color: $dark-grey;
+      font-size: 150%;
+    }
 }

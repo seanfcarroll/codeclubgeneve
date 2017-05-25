@@ -1,36 +1,40 @@
-
-<div id='workshops' class="content-section-b">
-
+<section id='workshops'>
   <div class="container">
-
     <div class="row">
       <div class="col-lg-5 col-lg-offset-1 col-sm-push-6  col-sm-6">
-        <hr class="section-heading-spacer">
         <div class="clearfix"></div>
-        <h2 class="section-heading">Coding Workshop</h2>
-        <h3>Sunday, June 11th<br/>09h00 - 13h00</h3>
-        <p class="lead">Turn your 2D designs into high quality, 3D product shots in seconds using free Photoshop actions by
-          <a target="_blank" href="http://www.psdcovers.com/">PSDCovers</a>! Visit their website to download some of their awesome, free photoshop actions!</p>
+        <h1 class="section-heading">Coding Workshop</h1>
+        <h3>Sunday, June 11th 09h00 - 13h00</h3>
+        <p class='lead'>
+          The first coding workshop will teach children aged 8-12 the basics of HTML and Web Page design. No coding experience is needed, and printed learning materials will be provided in English and French.</p>
+          <hr class='hr-grey'/>
+
+        <p class='lead'>The workshop will be led in English (only) and there is no charge, but space is strictly limited.</p>
+        <ul>
+          <li class='lead text-left'>Maximum 10 children</li>
+          <li class='lead text-left'>Children need to bring a laptop (any brand)</li>
+          <li class='lead text-left'>Parents are welcome to stay</li>
+          <li class='lead text-left'>Location (Eaux-Vives) to be annonced directly to registrants</li>
+        </ul>
       </div>
       <div class="col-lg-5 col-sm-pull-6  col-sm-6">
         <div class='panel panel-default'>
+          <div class='panel-header'>
+            <h3 class='text-center'>Registration Form</h3>
+          </div>
           <div class='panel-body'>
             <%= simple_form_for @registration, remote: true do |f| %>
-              <%= f.input :name, label: "Child's name" %>
-              <%= f.input :age, label: "Child's age" %>
-              <%= f.input :parent_name, label: "Parent's name" %>
-              <%= f.input :parent_phone, label: "Parent's phone" %>
-              <%= f.input :parent_email, label: "Parent's email" %>
+              <%= f.input :name, label: "Child's name", required: true %>
+              <%= f.input :age, label: "Child's age", required: true %>
+              <%= f.input :parent_name, label: "Parent's name", required: true %>
+              <%= f.input :parent_phone, label: "Parent's phone", required: true %>
+              <%= f.input :parent_email, label: "Parent's email", required: true %>
               <%= f.input :comments, as: :text %>
-              <%= f.submit 'Register', class: 'btn btn-primary btn-block' %>
+              <%= f.submit 'Register', class: 'btn btn-success btn-block' %>
             <% end %>
           </div>
         </div>
       </div>
     </div>
-
   </div>
-  <!-- /.container -->
-
-</div>
-<!-- /.content-section-b -->
+</section>
